@@ -1,0 +1,6 @@
+{
+  "name": "Hotel Mittal Paradise",
+  "description": "Premium, fast-loading, SEO-optimized website for Hotel Mittal Paradise – Hotels in Ujjain Near Mahakaleshwar Temple.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

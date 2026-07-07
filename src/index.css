@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-gold-300: #F4D06F; /* Champagne Gold */
+  --color-gold-500: #D4AF37; /* Luxury Gold */
+  --color-gold-600: #C5A12E; /* Rich Antique Gold */
+  --color-gold-700: #A88320; /* Deep Royal Gold */
+  --color-gold-800: #826315; /* Dark Imperial Gold */
+  
+  --color-matte-black: #0B0B0B;
+  --color-rich-black: #111111;
+  --color-charcoal: #1C1C1C;
+  --color-ivory: #FAF8F3;
+
+  /* Let's redefine brand colors to fit the black & gold scheme to avoid breaking existing styles and convert them seamlessly */
+  --color-brand-50: #111111; /* Rich Black */
+  --color-brand-100: #1C1C1C; /* Charcoal */
+  --color-brand-200: #2C2C2C; /* Muted Charcoal */
+  --color-brand-300: #F4D06F; /* Champagne Gold */
+  --color-brand-400: #E5C384; /* Soft Gold */
+  --color-brand-500: #D4AF37; /* Luxury Gold */
+  --color-brand-600: #C5A12E; /* Rich Antique Gold */
+  --color-brand-700: #A88320; /* Deep Royal Gold */
+  --color-brand-800: #826315; /* Dark Imperial Gold */
+  --color-brand-900: #111111; /* Rich Black */
+  --color-brand-950: #0B0B0B; /* Matte Black */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: #0B0B0B;
+    color: #FAF8F3;
+  }
+
+  body {
+    background-color: #0B0B0B;
+    color: #FAF8F3;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Custom Premium Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0B0B;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 9999px;
+    border: 2px solid #0B0B0B;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F4D06F;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
